@@ -1,0 +1,32 @@
+﻿
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Chat Room</h1>
+
+<div class="container" style="padding-top:50px;">
+    <div class="row">
+
+        <div class="col-md-7">
+            <span>Enter Your Name</span>
+            <input type="text" id="sendername" /> <br />
+            <span>Enter Your Message</span>
+            <textarea cols="50" rows="3" id="sendermessage"></textarea> <br />
+            <button id="send" type="submit" class="btn-outline-light">Send</button> <br />
+        </div>
+
+        <div class="col-md-5">
+            <h4>Live Chat</h4>
+            <ul class="alert-info" id="messageslist">
+
+            </ul>
+        </div>
+
+    </div>
+
+</div>
+
+<script src="~/lib/jquery/dist/jquery.js"></script>
+<script src="~/lib/signalr/dist/browser/signalr.js"></script>
+<script src="~/js/Rchat.js"></script>
